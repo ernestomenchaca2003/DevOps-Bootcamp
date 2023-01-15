@@ -36,6 +36,7 @@ https://es.wikipedia.org/wiki/GNU/Linux
 https://es.wikipedia.org/wiki/N%C3%BAcleo_Linux
 
 ### Who created Linux?
+https://es.wikipedia.org/wiki/Linus_Torvalds
 https://en.wikipedia.org/wiki/History_of_Linux
 
 ### What is "Kernel"?
@@ -54,6 +55,7 @@ https://es.wikipedia.org/wiki/Korn_shell
 https://es.wikipedia.org/wiki/Tcsh
 
 ### What is a distro in Linux?
+https://ed.team/blog/10-distribuciones-linux-mas-usadas
 https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Linux
 
 ### Linux directory structure
@@ -61,4 +63,4 @@ https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-h
 
 ### Most popular commands in Linux.
 https://www.digitalocean.com/community/tutorials/linux-commands
-https://www.hostinger.com/tutorials/linux-commands
+https://www.hostinger.com/tutorials/linux-commandswhere
