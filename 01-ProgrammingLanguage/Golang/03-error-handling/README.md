@@ -98,4 +98,4 @@ go run .
 Hi, Ernesto. Welcome!
 ```
 
-That's common error handling in Go: Return an error as a value so the caller can check for it.
+Next steps: [Return a random greeting](../04-random-greeting)
