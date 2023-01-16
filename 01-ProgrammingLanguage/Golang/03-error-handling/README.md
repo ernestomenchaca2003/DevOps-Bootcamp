@@ -84,10 +84,18 @@ func main() {
 At the command line in the `hello directory`, `run hello.go` to confirm that the code works.
 Now that you're passing in an empty name, you'll get an error.
 
+
+#### Output with empty name
 ```
 go run .
 greetings: empty name
 exit status 1
+```
+
+#### Output without empty name
+```
+go run .
+Hi, Ernesto. Welcome!
 ```
 
 That's common error handling in Go: Return an error as a value so the caller can check for it.
