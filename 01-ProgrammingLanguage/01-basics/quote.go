@@ -6,6 +6,6 @@ import (
 	"rsc.io/quote"
 )
 
-func main() {
+func quotes() {
 	fmt.Println(quote.Opt())
 }
