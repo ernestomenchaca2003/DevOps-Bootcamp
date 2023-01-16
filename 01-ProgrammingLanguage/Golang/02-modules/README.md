@@ -189,7 +189,7 @@ The command found the local code in the `greetings directory`, then added a requ
 At the command prompt in the `hello directory`, run your code to confirm that it works.
 ```
 go run .
-Hi, Gladys. Welcome!
+Hi, Ernesto. Welcome!
 ```
 
 Next steps: [Error handling](../03-error-handling)
