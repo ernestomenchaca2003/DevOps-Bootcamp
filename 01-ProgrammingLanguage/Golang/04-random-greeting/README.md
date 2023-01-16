@@ -68,15 +68,17 @@ func randomFormat() string {
 }
 ```
 
-In this code, you:
+### In this code, you:
 
-Add a Hellos function whose parameter is a slice of names rather than a single name. Also, you change one of its return types from a string to a map so you can return names mapped to greeting messages.
-Have the new Hellos function call the existing Hello function. This helps reduce duplication while also leaving both functions in place.
-Create a messages map to associate each of the received names (as a key) with a generated message (as a value). In Go, you initialize a map with the following syntax: make(map[key-type]value-type). You have the Hellos function return this map to the caller. For more about maps, see Go maps in action on the Go blog.
-Loop through the names your function received, checking that each has a non-empty value, then associate a message with each. In this for loop, range returns two values: the index of the current item in the loop and a copy of the item's value. You don't need the index, so you use the Go blank identifier (an underscore) to ignore it. For more, see The blank identifier in Effective Go.
-In your hello/hello.go calling code, pass a slice of names, then print the contents of the names/messages map you get back.
-In hello.go, change your code so it looks like the following.
+- Add a Hellos function whose parameter is a slice of names rather than a single name. Also, you change one of its return types from a string to a map so you can return names mapped to greeting messages.
+- Have the new Hellos function call the existing Hello function. This helps reduce duplication while also leaving both functions in place.
+- Create a messages map to associate each of the received names (as a key) with a generated message (as a value). In Go, you initialize a map with the following syntax: make(map[key-type]value-type). You have the Hellos function return this map to the caller.
+- Loop through the names your function received, checking that each has a non-empty value, then associate a message with each. In this for loop, range returns two values: the index of the current item in the loop and a copy of the item's value. You don't need the index, so you use the Go blank identifier (an underscore) to ignore it.
+- In your `hello/hello.go` calling code, pass a slice of names, then print the contents of the names/messages map you get back.
 
+**In `hello.go`, change your code so it looks like the following.**
+
+```
 package main
 
 import (
@@ -105,15 +107,16 @@ func main() {
     // messages to the console.
     fmt.Println(messages)
 }
-With these changes, you:
+```
 
-Create a names variable as a slice type holding three names.
-Pass the names variable as the argument to the Hellos function.
-At the command line, change to the directory that contains hello/hello.go, then use go run to confirm that the code works.
-The output should be a string representation of the map associating names with messages, something like the following:
+***With these changes, you:***
 
-$ go run .
+- Create a names variable as a slice type holding three names.
+- Pass the names variable as the argument to the Hellos function.
+- At the command line, change to the directory that contains hello/hello.go, then use go run to confirm that the code works.
+- The output should be a string representation of the map associating names with messages, something like the following:
+
+```
+go run .
 map[Darrin:Hail, Darrin! Well met! Gladys:Hi, Gladys. Welcome! Samantha:Hail, Samantha! Well met!]
-This topic introduced maps for representing name/value pairs. It also introduced the idea of preserving backward compatibility by implementing a new function for new or changed functionality in a module. For more about backward compatibility, see Keeping your modules compatible.
-
-Next, you'll use built-in Go features to create a unit test for your code.
+```
