@@ -47,3 +47,5 @@ Don't communicate by sharing memory, share memory by communicating.
 ```
 
 Notice that your code calls the Go function, printing a clever message about communication.
+
+Next steps: [Create a Go Module](../../02-modules/)
