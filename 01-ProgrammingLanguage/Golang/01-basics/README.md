@@ -12,8 +12,10 @@ On Windows:
 Create a "hello" directory for your first Go source code.
 For example, use the following commands:
 
-```mkdir hello
-cd hello```
+``` 
+mkdir hello
+cd hello 
+```
 
 Enable dependency tracking for your code.
 When your code imports packages contained in other modules, you manage those dependencies through your code's own module. That module is defined by a **go.mod** file that tracks the modules that provide those packages. That **go.mod** file stays with your code, including in your source code repository.
@@ -22,20 +24,24 @@ To enable dependency tracking for your code by creating a go.mod file, run the `
 
 For the purposes of this tutorial, just use example/hello.
 
-```go mod init example/hello
-go: creating new go.mod: module example/hello```
+```
+go mod init example/hello
+go: creating new go.mod: module example/hello
+```
 
 In your text editor, create a file `hello.go` in which to write your code.
 
 Paste the following code into your `hello.go` file and save the file.
 
-```package main
+```
+package main
 
 import "fmt"
 
 func main() {
     fmt.Println("Hello, World!")
-}```
+}
+```
 
 #### This is your Go code. In this code, you:
 
@@ -45,8 +51,10 @@ func main() {
 
 #### Run your code to see the greeting.
 
-```go run .
-Hello, World!```
+```
+go run .
+Hello, World!
+```
 
 The `go run` command is one of many go commands you'll use to get things done with Go. Use the following command to get a list of the others:
 
