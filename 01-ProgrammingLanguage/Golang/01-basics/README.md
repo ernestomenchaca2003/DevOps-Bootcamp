@@ -1,5 +1,7 @@
 ### Get started with Hello, World.
 
+[Official Documentation](https://go.dev/doc/tutorial/getting-started#)
+
 Open a command prompt and cd to your home directory.
 On Linux or Mac:
 
