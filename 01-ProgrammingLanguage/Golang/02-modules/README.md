@@ -99,9 +99,13 @@ Create a `hello` directory for your Go module source code. This is where you'll 
 
 After you create this directory, you should have both a hello and a greetings directory at the same level in the hierarchy, like so:
 
-<home>/
- |-- greetings/
- |-- hello/
+```
+home/
+
+    |-- greetings/
+
+    |-- hello/
+```
 
 ```
 cd ..
