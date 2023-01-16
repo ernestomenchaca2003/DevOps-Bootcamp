@@ -4,17 +4,19 @@ You can look for a package that has functions you can use in your code.
 
 Visit [pkg.go.dev](https://pkg.go.dev) and search for a "quote" package.
 
-Locate and click the **rsc.io/quote** package in search results.
+Locate and click the **[rsc.io/quote](https://pkg.go.dev/rsc.io/quote/v4)** package in search results.
 
 In the Documentation section, under Index, note the list of functions you can call from your code. You'll use the **Go function.**
 
-At the top of this page, note that package quote is included in the **rsc.io/quote** module.
+At the top of this page, note that package quote is included in the **[rsc.io/quote](https://pkg.go.dev/rsc.io/quote/v4)** module.
 
 You can use the [pkg.go.dev](https://pkg.go.dev) site to find published modules whose packages have functions you can use in your own code. Packages are published in modules -- like rsc.io/quote -- where others can use them. Modules are improved with new versions over time, and you can upgrade your code to use the improved versions.
 
 ### Code
 
-In your Go code, import the rsc.io/quote package and add a call to its Go function.
+Create a file called `quote.go`.
+
+In your Go code, import the `rsc.io/quote` package and add a call to its Go function.
 After adding the highlighted lines, your code should include the following:
 
 ```
@@ -32,6 +34,7 @@ Add new module requirements and sums.
 Go will add the quote module as a requirement, as well as a `go.sum` file for use in authenticating the module. 
 
 ```
+go mod init example/quote
 go mod tidy
 go: finding module for package rsc.io/quote
 go: found rsc.io/quote in rsc.io/quote v1.5.2
