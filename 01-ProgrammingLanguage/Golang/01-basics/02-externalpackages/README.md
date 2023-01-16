@@ -1,14 +1,12 @@
 #### Call code in an external package
 
-When you need your code to do something that might have been implemented by someone else, you can look for a package that has functions you can use in your code.
+You can look for a package that has functions you can use in your code.
 
-Make your printed message a little more interesting with a function from an external module.
-
-Visit [pkg.go.dev](pkg.go.dev) and search for a "quote" package.
+Visit [pkg.go.dev](https://pkg.go.dev) and search for a "quote" package.
 Locate and click the rsc.io/quote package in search results (if you see rsc.io/quote/v3, ignore it for now).
 In the Documentation section, under Index, note the list of functions you can call from your code. You'll use the **Go function.**
 At the top of this page, note that package quote is included in the rsc.io/quote module.
-You can use the [pkg.go.dev](pkg.go.dev) site to find published modules whose packages have functions you can use in your own code. Packages are published in modules -- like rsc.io/quote -- where others can use them. Modules are improved with new versions over time, and you can upgrade your code to use the improved versions.
+You can use the [pkg.go.dev](https://pkg.go.dev) site to find published modules whose packages have functions you can use in your own code. Packages are published in modules -- like rsc.io/quote -- where others can use them. Modules are improved with new versions over time, and you can upgrade your code to use the improved versions.
 
 In your Go code, import the rsc.io/quote package and add a call to its Go function.
 After adding the highlighted lines, your code should include the following:
