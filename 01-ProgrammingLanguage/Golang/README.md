@@ -22,3 +22,5 @@ In this tutorial, you'll get a brief introduction to Go programming. Along the w
 - A command terminal. Go works well using any terminal on Linux and Mac, and on PowerShell or cmd in Windows.
 - Install Go
 - Just use the Download and install steps.
+
+# [Lets get started](01-basics/).
