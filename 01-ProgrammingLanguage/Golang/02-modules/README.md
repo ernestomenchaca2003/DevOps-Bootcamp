@@ -1,25 +1,24 @@
-Tutorial: Create a Go module
-Table of Contents
-Prerequisites
-Start a module that others can use
-This is the first part of a tutorial that introduces a few fundamental features of the Go language. If you're just getting started with Go, be sure to take a look at Tutorial: Get started with Go, which introduces the go command, Go modules, and very simple Go code.
+# Create a Go module
 
-In this tutorial you'll create two modules. The first is a library which is intended to be imported by other libraries or applications. The second is a caller application which will use the first.
+You'll create two modules. 
+1. The first is a library which is intended to be imported by other libraries or applications. 
+2. The second is a caller application which will use the first.
 
-This tutorial's sequence includes seven brief topics that each illustrate a different part of the language.
+This tutorial's sequence.
 
-Create a module -- Write a small module with functions you can call from another module.
-Call your code from another module -- Import and use your new module.
-Return and handle an error -- Add simple error handling.
-Return a random greeting -- Handle data in slices (Go's dynamically-sized arrays).
-Return greetings for multiple people -- Store key/value pairs in a map.
-Add a test -- Use Go's built-in unit testing features to test your code.
-Compile and install the application -- Compile and install your code locally.
-Note: For other tutorials, see Tutorials.
-Prerequisites
-Some programming experience. The code here is pretty simple, but it helps to know something about functions, loops, and arrays.
-A tool to edit your code. Any text editor you have will work fine. Most text editors have good support for Go. The most popular are VSCode (free), GoLand (paid), and Vim (free).
-A command terminal. Go works well using any terminal on Linux and Mac, and on PowerShell or cmd in Windows.
+1. Create a module -- Write a small module with functions you can call from another module.
+2. Call your code from another module -- Import and use your new module.
+3. Return and handle an error -- Add simple error handling.
+4. Return a random greeting -- Handle data in slices (Go's dynamically-sized arrays).
+5. Return greetings for multiple people -- Store key/value pairs in a map.
+6. Add a test -- Use Go's built-in unit testing features to test your code.
+7. Compile and install the application -- Compile and install your code locally.
+
+## Prerequisites
+- Some programming experience. The code here is pretty simple, but it helps to know something about functions, loops, and arrays.
+- A tool to edit your code. Any text editor you have will work fine. Most text editors have good support for Go. The most popular are VSCode (free), GoLand (paid), and Vim (free).
+- A command terminal. Go works well using any terminal on Linux and Mac, and on PowerShell or cmd in Windows.
+
 Start a module that others can use
 Start by creating a Go module. In a module, you collect one or more related packages for a discrete and useful set of functions. For example, you might create a module with packages that have functions for doing financial analysis so that others writing financial applications can use your work. For more about developing modules, see Developing and publishing modules.
 
